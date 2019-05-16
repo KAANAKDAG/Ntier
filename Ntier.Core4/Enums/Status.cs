@@ -1,5 +1,10 @@
 ﻿namespace Ntier.Core4.Enums
 {
+
+
+
+
+
     public enum Status
     {
         
