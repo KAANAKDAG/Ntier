@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A2A774B-6C1F-4D39-B044-B9C05D75F94E}</ProjectGuid>
+    <ProjectGuid>{FBB89145-5B97-4E21-A731-FB58A60ACFBA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ntier.Core4</RootNamespace>
-    <AssemblyName>Ntier.Core4</AssemblyName>
+    <RootNamespace>Ntier.Entities</RootNamespace>
+    <AssemblyName>Ntier.Entities</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,10 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\CoreEntity.cs" />
-    <Compile Include="Entities\ICoreEntity.cs" />
-    <Compile Include="Enums\Status.cs" />
+    <Compile Include="Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ntier.Core4\Ntier.Core4.csproj">
+      <Project>{0a2a774b-6c1f-4d39-b044-b9c05d75f94e}</Project>
+      <Name>Ntier.Core4</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
